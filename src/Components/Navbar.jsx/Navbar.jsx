@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import LoginAndProfile from "../LoginAndProfile/LoginAndProfile";
 
@@ -14,14 +14,14 @@ const Navbar = () => {
     </>
   );
   return (
-    <div>
-      <div className="drawer">
+    <div className="">
+      <div className="drawer z-50 ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
 
-          <div className="w-full navbar  ">
-            <div className=" w-full max-w-[1200px] px-[25px] mx-auto navbarBlur ">
+          <div className="w-full navbar navbarBlur  ">
+            <div className=" w-full max-w-screen-xl px-[25px] mx-auto bg-opacity-100">
               <div className="flex-none lg:hidden">
                 <label
                   htmlFor="my-drawer-3"
@@ -43,7 +43,14 @@ const Navbar = () => {
                   </svg>
                 </label>
               </div>
-              <div className="flex-1">Navbar Title</div>
+              <div className="flex-1">
+                <div>
+                  <img
+                    src="https://demo.xpeedstudio.com/marketov2/home4/wp-content/uploads/sites/4/2018/05/logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
               <div className="flex-none hidden lg:block">
                 <div className=" menu menu-horizontal">{links}</div>
               </div>
@@ -54,9 +61,7 @@ const Navbar = () => {
           </div>
 
           {/* Page content here */}
-          <div>
-            <div className="min-h-screen">{<Outlet></Outlet>}</div>
-          </div>
+         
         </div>
         <div className="drawer-side">
           <label
@@ -64,7 +69,7 @@ const Navbar = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <div className="menu p-4 w-64 sm:w-80 min-h-full bg-base-200 z-50">
+          <div className="menu p-4 w-64 sm:w-80 min-h-full bg-base-200 ">
             {/* Sidebar content here */}
             {links}
           </div>

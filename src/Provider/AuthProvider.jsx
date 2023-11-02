@@ -47,6 +47,8 @@ const AuthProvider = ({ children }) => {
     };
   }, []);
 
+  console.log(user);
+
   const info = {
     user,
     userLoading,

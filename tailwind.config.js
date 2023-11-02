@@ -5,13 +5,13 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#0063d1",
+          primary: "#2b3440",
 
           secondary: "#83b735",
 
           accent: "#1dcdbc",
 
-          neutral: "#2b3440",
+          neutral: "#0063d1",
 
           "base-100": "#ffffff",
 
