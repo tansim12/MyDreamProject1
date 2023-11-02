@@ -1,0 +1,10 @@
+.navbarBlur {
+    position: sticky;
+    top: 0;
+    min-height: 68px;
+    /* background-color: #edc7c7e3;  */
+    
+    backdrop-filter: blur(60px);
+    -webkit-backdrop-filter: blur(100px);
+    
+  }
