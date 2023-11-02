@@ -14,8 +14,8 @@ const Register = () => {
     const confirmPassword = form.confirmPassword.value;
     const email = form.email.value;
     // console.log(name, email, password, confirmPassword);
+    const toastId = toast.loading("Register Successfully done");
     try {
-      const toastId = toast.loading("Register Successfully done");
       await register(email, password)
         .then(() =>
           toast.success("Register Successfully done", { id: toastId })

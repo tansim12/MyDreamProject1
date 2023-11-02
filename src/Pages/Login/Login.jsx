@@ -27,12 +27,13 @@ const Login = () => {
     // if (!patten.test(password)) {
     //   return toast.error("Password not should be one special  characters '@'");
     // }
+    const toastId = toast.loading("Login Successfully done");
     login(email, password)
       .then(() => {
-        toast.success("Login successfully");
+        toast.success("Login successfully done" , {id: toastId});
         navigate(loc?.state ? loc?.state : "/");
       })
-      .catch(() => toast.error("Invalid user ."));
+      .catch(() => toast.error("Invalid user ." , {id :toastId}));
   };
 
   return (

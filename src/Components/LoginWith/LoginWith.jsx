@@ -1,14 +1,20 @@
 import toast from "react-hot-toast";
 import useAuthContext from "../../Hooks/useAuthContext";
 import { FcGoogle } from "react-icons/fc";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const LoginWith = () => {
   const { googleLogin } = useAuthContext();
+  const navigate = useNavigate();
+  const loc = useLocation();
   //   handleGoogleLogin
   const handleGoogleLogin = (media) => {
     const toastId = toast.loading("Login Successfully done");
     media()
-      .then(() => toast.success("Login Successfully done", { id: toastId }))
+      .then(() => {
+        toast.success("Login Successfully done", { id: toastId });
+        navigate(loc?.state ? loc?.state : "/");
+      })
       .catch((err) => toast.error(err.message, { id: toastId }));
   };
   return (
