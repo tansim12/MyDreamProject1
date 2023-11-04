@@ -1,5 +1,6 @@
 import Slider from "../../Components/BannarWithSwiper/Slider";
 
+
 const Home = () => {
   return (
     <div>
@@ -8,6 +9,7 @@ const Home = () => {
         <Slider></Slider>
       </div>
       <div className="min-h-screen">
+        
       </div>
     </div>
   );

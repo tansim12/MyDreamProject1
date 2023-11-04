@@ -15,14 +15,14 @@ const Navbar = () => {
   );
   return (
     <div className="">
-      <div className="drawer z-50 ">
+      <div className="drawer z-50  ">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col">
+        <div className="drawer-content flex flex-col ">
           {/* Navbar */}
 
-          <div className="w-full navbar navbarBlur  ">
-            <div className=" w-full max-w-screen-xl px-[25px] mx-auto bg-opacity-100">
-              <div className="flex-none lg:hidden">
+          <div className="w-full navbar  navbarBlur  ">
+            <div className=" w-full max-w-screen-xl px-[25px] mx-auto bg-opacity-100  ">
+              <div className="flex-none lg:hidden ">
                 <label
                   htmlFor="my-drawer-3"
                   aria-label="open sidebar"
@@ -61,7 +61,6 @@ const Navbar = () => {
           </div>
 
           {/* Page content here */}
-         
         </div>
         <div className="drawer-side">
           <label
